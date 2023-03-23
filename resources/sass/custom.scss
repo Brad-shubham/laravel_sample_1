@@ -1,0 +1,1209 @@
+/* login page css start */
+@import "~startbootstrap-sb-admin-2/css/sb-admin-2.css";
+
+.tb-login-logo {
+    background: linear-gradient(
+            190deg,
+            rgba(18, 117, 191, 1) 30%,
+            rgba(23, 49, 87, 1) 100%
+    );
+}
+
+.tb-bg-login-image {
+    background-image: url("/images/logo.png");
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* login page css end */
+
+/*=============================
+            Global CSS
+==============================*/
+
+body,
+html {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif !important;
+}
+
+.text-gray-800 {
+    font-size: 20px !important;
+}
+
+.tb-auth-container {
+    height: 100vh;
+}
+
+.common-border {
+    border: 2px solid #eee;
+    padding: 2rem;
+    border-radius: 2%;
+    margin-bottom: 1.5rem;
+}
+
+.submit-row button {
+    background-color: #dedede;
+    border: 1px solid #adadad6b;
+}
+
+button.list-group-item:hover,
+.list-group-item.active,
+.custom-btn a:hover {
+    color: #fff;
+    background: linear-gradient(180deg, #1275bf 0%, #173157 100%) !important;
+    border-color: #173157;
+}
+
+.submit-row span.text {
+    margin-left: 10px;
+}
+
+button.list-group-item.delete:hover {
+    opacity: 1;
+    background: linear-gradient(
+            180deg,
+            #f44336ba 0%,
+            #f44336c7 100%
+    ) !important;
+}
+
+button.list-group-item.delete {
+    color: #fff;
+    background: linear-gradient(180deg, #f44336 0%, #f44336 100%) !important;
+    border-color: #f44336;
+    opacity: 1;
+}
+
+.cross-btn,
+.cross-btn:hover,
+.select-type {
+    text-transform: capitalize !important;
+    color: #fff !important;
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    font-size: 14px !important;
+}
+
+.select-type {
+    text-transform: inherit;
+}
+
+.add-btn {
+    color: #858796;
+    background: transparent;
+    border: none;
+}
+
+/* button:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+} */
+
+.table td {
+    padding-left: 23px;
+}
+
+.tb-student td.laravel-vue-datatable-td:nth-last-child(2) {
+    padding-left: 10px;
+}
+
+.table td:last-child {
+    padding-left: 10px;
+}
+
+/* modal popup */
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 11.75rem auto;
+}
+
+.custom-modal {
+    background: rgba(0, 0, 0, 0.64);
+    display: block !important;
+}
+
+.modal-content.tb-trash-popup {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.submit-row button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    border-radius: 6px;
+    background: linear-gradient(223.67deg, #1275bf 0%, #2160a1 100%);
+    margin-bottom: 0.5rem;
+}
+
+.submit-row .delete {
+    background: transparent;
+    color: #000;
+}
+
+.common-space .form-group {
+    margin: 0 30px;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+         override
+==============================*/
+.tb-test .text-dark {
+    color: #000 !important;
+}
+
+.bg-gradient-primary,
+.btn-primary {
+    background: linear-gradient(180deg, #1275bf 0%, #173157 100%) !important;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.tb-trash .btn-sm {
+    padding: 0 !important;
+}
+
+/* .sidebar-dark .nav-item .nav-link{
+    max-width: 150px;
+    margin: 0 auto;
+    text-align: left;
+} */
+
+.sidebar .nav-item .nav-link i,
+.sidebar .nav-item .nav-link .fas {
+    margin-right: 10px;
+    padding: 4px;
+}
+
+.multiselect__tags {
+    max-height: 6px !important;
+    border: 1px solid #d1d3e2 !important;
+    min-height: 38px !important;
+}
+
+span.multiselect__option.multiselect__option--highlight.multiselect__option--selected {
+    background: #226eb4;
+}
+
+span.multiselect__option.multiselect__option--highlight.multiselect__option--selected:active {
+    background: #226eb4;
+}
+
+span.multiselect__option.multiselect__option--highlight {
+    background: #226eb4;
+}
+
+span.multiselect__option.multiselect__option--highlight:after {
+    background: #226eb4;
+}
+
+.multiselect__single {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: #6e707e !important;
+}
+
+label.custom-file-label {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+    font-weight: 400 !important;
+}
+
+.tb-select select {
+    width: 80px !important;
+    /* needed */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* SVG background image */
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%238C98F2'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 20px) center;
+    background-repeat: no-repeat;
+    margin-bottom: 0.5rem;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*==== all table list css ====*/
+
+/*=============================
+            Global CSS
+==============================*/
+
+.no-arrow img {
+    width: 30px;
+    height: 30px;
+}
+
+.gray-bg {
+    background: linear-gradient(180.24deg, #409dd3 0%, #1e64a7 100%);
+    padding: 6px 0;
+    border-radius: 0.35rem;
+    margin: 0 25px;
+}
+
+.wrapper .gray-bg {
+    margin: 0;
+}
+
+label {
+    font-weight: 900 !important;
+    color: #00000085;
+}
+
+.gray-bg label {
+    color: #fff !important;
+    margin-bottom: 0;
+}
+
+.text-blue {
+    color: #2d7ebb;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.custom-btn button {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    background: linear-gradient(223.67deg, #1275bf 0%, #2160a1 100%);
+    color: #fff;
+    max-width: 351px;
+    width: 100%;
+    text-align: center;
+    margin: 2rem;
+    border: none;
+}
+
+/* .gray-bg span{
+    margin: 0 20px;
+} */
+
+.inner-border {
+    border: 2px solid #eee;
+    margin: 0 1rem;
+    border-radius: 2%;
+    margin-bottom: 1.5rem;
+}
+
+span.glyphicon.glyphicon-plus {
+    margin-right: 10px;
+}
+
+.delete-btn button {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(180deg, #f44336 0%, #f44336 100%) !important;
+    margin-top: 1rem;
+    border: #f44336;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.delete-btn button:hover {
+    opacity: 0.6;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+all tale list with date picker
+==============================*/
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"] {
+    border: none;
+    width: 80%;
+}
+
+.date-picker .input {
+    background-color: #ffffff;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+    side panel and menu css
+==============================*/
+
+.sidebar {
+    position: fixed;
+    z-index: 99;
+}
+
+#wrapper #content-wrapper {
+    margin-left: 14rem;
+    min-height: 100vh;
+}
+
+nav.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 14rem;
+    z-index: 1030;
+}
+
+.sidebar-toggled #wrapper #content-wrapper {
+    margin-left: 6.5rem;
+}
+
+.sidebar-toggled nav.topbar {
+    left: 6.5rem;
+}
+
+div#content {
+    padding-top: 5.5rem;
+}
+
+.tb-logo img {
+    width: 150px !important;
+}
+
+.sm-logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.toggled .sm-logo {
+    display: block !important;
+}
+
+.tb-logo {
+    height: 150px !important;
+}
+
+.sidebar .nav-item .nav-link span {
+    font-size: 16px !important;
+}
+
+li.nav-item.active {
+    background: #147dce;
+    border-left: 2px solid #fff;
+}
+
+li.nav-item.active a {
+    font-weight: 400 !important;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+        student page css
+==============================*/
+
+.tb-student-add input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+.tb-student-add textarea {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: 0.35rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+}
+
+.tb-student-add textarea {
+    height: auto !important;
+}
+
+/*=== personal infomation ======*/
+
+.heading-one h1,
+.heading-one h2 {
+    color: #686868;
+    font-size: 20px;
+    margin: 1rem 0 2rem 0;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+     ADD Course Page  CSS
+==============================*/
+
+.add-course .form-group,
+.common-space .form-group {
+    padding: 2rem 0.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.add-course h1 {
+    font-size: 16px;
+    padding: 1rem 20px;
+    font-weight: 700;
+    color: #858796;
+    margin-bottom: 0;
+}
+
+.bg-gray .form-group {
+    margin-left: 2rem;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+          test page css
+==============================*/
+
+.tb-trash a {
+    padding: 0;
+}
+
+.tb-trash-popup {
+    border: 3px solid #072741;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+        LESSON PAGE CSS
+==============================*/
+
+.tb-lesson {
+    border: 2px solid #eee;
+    padding: 2rem;
+    border-radius: 2%;
+    margin-bottom: 1.5rem;
+}
+
+.tb-lesson h1 {
+    background: linear-gradient(180.24deg, #409dd3 0%, #1e64a7 100%);
+    color: #fff;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.tb-lesson h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.tb-lesson .form-group {
+    padding-top: 0.5rem;
+}
+
+.select-question p {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+}
+
+.select-question button {
+    background: transparent;
+    border: none;
+}
+
+.select-question p a {
+    color: #000;
+    text-decoration: none;
+}
+
+.select-question p a:hover {
+    text-decoration: none;
+}
+
+/*=============================
+            END
+==============================*/
+
+/*=============================
+           test result page
+==============================*/
+.common-border h1,
+.common-border h2 {
+    font-weight: 900 !important;
+    color: #00000085 !important;
+    font-size: 16px !important;
+}
+
+.tb-disabled-btn {
+    background: #dddddd !important;
+}
+
+.tb-test label {
+    color: #000;
+    margin-bottom: 0;
+}
+
+.tb-test-title h1 {
+    font-size: 25px;
+    color: #000;
+    margin-top: 10px;
+    padding: 0 !important;
+}
+
+.tb-test-title label {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 400 !important;
+    color: #000;
+}
+
+.tb-test-lesson label,
+.tb-test-lesson h1 {
+    font-size: 20px;
+    color: #000;
+    padding: 0;
+    font-weight: 100 !important;
+}
+
+.tb-test-lesson h1 {
+    font-weight: 500 !important;
+    margin-top: 1rem;
+}
+
+.custom-width {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tb-test hr {
+    max-width: 900px;
+    margin-top: 2rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.tb-grade {
+    display: flex;
+    padding-left: 3rem;
+    align-items: center;
+}
+
+.tb-grade .form-control {
+    width: 10% !important;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.tb-grade span {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 0.5rem;
+}
+
+.tb-score h3 {
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.tb-score span {
+    font-size: 16px;
+    color: #fff;
+    background: #1e67ab;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    padding: 40px;
+}
+
+.d-flex.tb-score {
+    padding: 1rem 0;
+}
+
+/*=============================
+            END
+==============================*/
+/*=============================
+         Badge
+==============================*/
+.badge {
+    padding: 9px !important;
+    border-radius: 0 !important;
+    margin-left: -10px;
+}
+
+/*=============================
+            END
+==============================*/
+/*=============================
+    view profile & list
+==============================*/
+.view-course h1 {
+    font-size: 2rem !important;
+    color: #000 !important;
+    padding: 1rem;
+    padding-bottom: 0;
+    font-weight: 400 !important;
+}
+
+.view-course h2 {
+    padding: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.view-course a {
+    color: #000;
+}
+
+.row.add-course.view-course h2 {
+    color: #000;
+}
+
+.view-course .table thead th {
+    background: #e5e5e5;
+    color: #000;
+    min-width: 190px;
+    width: 100%;
+}
+
+.content-wrapper {
+    position: relative;
+    padding: 30px;
+}
+
+.ng-modal-number-container {
+    margin-top: 25px;
+
+    border-top: 1px solid #e5e5e5;
+    width: auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.questionNumbers {
+    margin-top: -30px;
+}
+
+.questionNumbers span a {
+    color: #72bb53;
+}
+
+.questionNumberIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #72bb53;
+    margin-bottom: 1rem;
+}
+
+.questionNumberIcon.incomplete {
+    background: #EBEBEB;
+}
+
+.questionNumbers span .incomplete {
+    color: #C8C0C0;
+}
+
+.tb-view-list h1 {
+    font-size: 25px !important;
+    color: #000 !important;
+}
+
+/*=============================
+                end
+==============================*/
+/*=============================
+       UI FEEDBACK CSS
+==============================*/
+
+.tb-status .badge {
+    display: flex;
+    justify-content: center;
+    padding: 1rem !important;
+    border-radius: 50px !important;
+    margin: 0 auto;
+}
+
+.breadcrumb li a,
+.card-header h6 {
+    color: #13365b !important;
+}
+
+.btn-success,
+.page-item.active .page-link {
+    color: #fff;
+    background-color: #105790 !important;
+    border-color: #13365b !important;
+}
+
+.delete span.text {
+    margin-right: -8px;
+}
+
+::placeholder {
+    color: #858796ad !important;
+}
+
+.upload-img img {
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: contain;
+    margin: 1rem 0 6rem;
+}
+
+.ck-editor__editable {
+    min-height: 150px;
+    max-height: 400px;
+}
+
+.has-error {
+    .trumbowyg-box {
+        border: 1px solid red;
+        font-size: 80%;
+    }
+}
+
+
+/* .tb-pointer{
+    cursor: pointer;
+} */
+
+.toggled li.nav-item.active {
+    border-top: 5px solid #fff;
+    border-left: none;
+}
+
+.upload-img {
+    position: relative;
+    height: 100%;
+}
+
+button.img-close {
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    top: 10px;
+    left: 60px;
+    opacity: 1;
+}
+
+button.img-close {
+    color: #fff;
+    font-weight: 100;
+    font-size: 17px;
+    display: flex;
+}
+
+.tb-publisher .custom-file-label {
+    font-weight: 400 !important;
+}
+
+.responsive-text.tb-trash {
+    justify-content: center;
+    margin-top: -7px;
+}
+
+button.text-blue:focus {
+    outline: none;
+}
+
+.table thead th {
+    min-width: 160px;
+}
+
+button.close.img-close:hover {
+    color: #fff;
+}
+
+.add-course .responsive-text.tb-trash {
+    margin-top: 0;
+}
+
+.custom-width .tb-correct {
+    padding-right: 4rem !important;
+}
+
+.list-group-item.disabled,
+.list-group-item:disabled {
+    color: #858796;
+    pointer-events: none;
+    background-color: #dedede;
+}
+
+/* truth bible */
+.course-test .common-border {
+    border-radius: 4px;
+    margin-bottom: 0;
+    max-height: calc(100vh - 13.5rem);
+    overflow: auto;
+    padding-bottom: 1rem !important;
+}
+.course-test .common-border::-webkit-scrollbar {
+    width: 6px;
+}
+
+.course-test .common-border::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #1e67ab;
+}
+
+.course-test .common-border::-webkit-scrollbar-track {
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.course-test .common-border .comments {
+    padding-right: 1rem !important;
+    max-width: 1080px;
+}
+.course-test .common-border .tb-test-title,
+.course-test .common-border .tb-test-lesson {
+    padding-left: 2.5rem !important;
+}
+
+.course-test .common-border .custom-width + .options-table {
+    margin-left: 2rem;
+}
+
+footer.sticky-footer {
+    padding: 1.25rem 0 !important;
+}
+
+.course-test .common-border .tb-questions {
+    padding-left: 3rem;
+}
+
+.course-test .tb-status {
+    margin-top: 20px;
+}
+
+@media (max-width: 1649px) {
+    .course-test .common-border .comments {
+        padding-left: 1rem !important;
+    }
+    .course-test .common-border .tb-test-title,
+    .course-test .common-border .tb-test-lesson {
+        padding-left: 0.5rem !important;
+    }
+
+    .course-test .common-border .custom-width + .options-table {
+        margin-left: 0;
+    }
+    .course-test .common-border .custom-width {
+        padding-right: 10%;
+    }
+
+    .course-test .common-border .tb-questions {
+        padding-left: 1rem;
+    }
+    .course-test .tb-score span {
+        height: 60px;
+        width: 60px;
+        padding: 30px;
+    }
+
+    .sidebar .nav-item .nav-link {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .course-test .common-border .custom-width {
+        padding-right: 4%;
+    }
+}
+
+@media (max-width: 767px) {
+    .course-test .common-border {
+        max-height: calc(100vh - 18.125rem);
+    }
+    .course-test >.col-md-3{
+        margin-top: 1.5rem;
+    }
+}
+
+/*=============================
+            END
+==============================*/
+
+@media (min-width: 1441px) {
+    .custom-width {
+        max-width: 900px;
+    }
+
+    .custom-width .tb-correct {
+        padding-right: 6rem !important;
+    }
+
+    .tb-grade .form-control {
+        width: 8% !important;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        font-size: 16px !important;
+    }
+
+    .responsive-text {
+        position: absolute;
+        top: 10%;
+        left: 60%;
+        justify-content: center;
+    }
+
+    .responsive-text.col-sm-1 > input {
+        padding: 10px;
+        margin-left: -5%;
+    }
+
+    .toggled .bg-gray .responsive-text {
+        left: 43%;
+    }
+
+    .bg-gray .responsive-text {
+        left: 60%;
+    }
+
+    .tb-trash {
+        margin-left: 2rem;
+        width: 25px;
+        height: 25px;
+    }
+
+    /* .tb-trash i {
+        margin-left: 3px;
+    } */
+    div.table-responsive
+    > div.dataTables_wrapper
+    > div.row
+    > div[class^="col-"]:last-child {
+        padding: 0;
+    }
+
+    div#studentdataTable_filter,
+    div#studentdataTable_length {
+        text-align: left;
+    }
+
+    .modal-content {
+        max-width: 350px !important;
+        margin: 0 auto;
+    }
+
+    .card-header a {
+        font-size: 10px !important;
+    }
+
+    .btn-icon-split .text {
+        font-size: 10px !important;
+        line-height: 2;
+    }
+
+    .gray-bg {
+        margin: 10px 15px;
+    }
+
+    .common-border {
+        padding: 10px;
+    }
+
+    .add-course .form-group {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    #wrapper #content-wrapper {
+        margin-left: 6.5rem;
+    }
+
+    li.nav-item.active,
+    .sidebar-toggled li.nav-item {
+        border-top: 8px solid #fff;
+        border-left: none;
+    }
+
+    nav.topbar {
+        left: 6.5rem;
+    }
+
+    .sidebar-toggled #wrapper #content-wrapper {
+        margin-left: 0;
+    }
+
+    .sidebar-toggled nav.topbar {
+        left: 0;
+    }
+
+    .tb-trash {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .gray-bg .responsive-text {
+        position: relative !important;
+        left: 0;
+        top: 7px;
+    }
+
+    .tb-table select {
+        margin-bottom: 0.5rem;
+    }
+
+    .responsive-text.tb-trash {
+        margin-top: -2px !important;
+    }
+
+    button.img-close span {
+        margin-top: -4px;
+    }
+}
+
+@media (min-width: 812px) {
+    .sm-logo img {
+        display: none;
+    }
+}
+
+@media (max-width: 812px) {
+    .sidebar .sidebar-brand .sidebar-brand-text {
+        display: none;
+    }
+
+    .submit-row span.text {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 991px) {
+    .sm-logo img {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar ul {
+        overflow-y: scroll;
+        max-height: 300px;
+    }
+
+    .modal-dialog {
+        margin: 4.75rem auto !important;
+    }
+
+    .submit-row span.text {
+        margin-left: 10px;
+    }
+
+    /* test result */
+    .tb-lesson {
+        padding: 10px;
+    }
+
+    .tb-grade .form-control {
+        width: 30% !important;
+    }
+
+    .responsive-select-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .responsive-select-icon .d-block {
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-width {
+        display: none !important;
+    }
+
+    /* test */
+    .responsive-text.tb-trash {
+        margin-top: -6px;
+    }
+
+    /* wordpress editor */
+    button.ck.ck-button.ck-off.ck-dropdown__button
+    .ck.ck-reset.ck-dropdown__panel.ck-dropdown__panel_sw.ck-dropdown__panel-visible {
+        width: 300px;
+    }
+
+    /* test result */
+    .tb-score {
+        display: block !important;
+    }
+
+    .tb-grade {
+        padding-left: 10px;
+    }
+
+    .tb-grade span:last-child {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tb-score {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar .nav-item .nav-link i {
+        font-size: 1.3rem !important;
+    }
+}
